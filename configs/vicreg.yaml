@@ -1,0 +1,11 @@
+# VICReg baseline configuration.
+
+sim_coeff: 25.0
+std_coeff: 25.0
+cov_coeff: 1.0
+
+epochs: 200
+batch_size: 512
+base_lr: 0.3
+weight_decay: 1.0e-6
+warmup_epochs: 10

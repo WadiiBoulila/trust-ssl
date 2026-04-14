@@ -1,0 +1,30 @@
+# Trust-SSL cosine-gate ablation.
+#
+# Ablation that replaces the evidential head + Dempster-Shafer fusion
+# with a learned per-factor cosine similarity gate. Same factorization
+# (T = 6), same additive-residual recipe, same auxiliary classifier.
+# Tests whether the evidential machinery is necessary beyond a simpler
+# learned gate.
+
+num_factors: 6
+factor_dim: 128
+# num_prototypes and prior_strength are unused when gate_kind = cosine.
+
+gate_kind: cosine
+gate_alpha: 2.0
+gate_gamma: 3.0
+temperature: 0.1
+
+lambda_sel_max: 0.2
+lambda_sel_start_epoch: 100
+lambda_sel_end_epoch: 150
+lambda_min_start: 0.5
+lambda_min_end: 0.05
+
+num_corrupt_classes: 9
+
+epochs: 200
+batch_size: 512
+base_lr: 0.3
+weight_decay: 1.0e-6
+warmup_epochs: 10

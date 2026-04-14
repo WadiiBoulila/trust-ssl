@@ -1,0 +1,37 @@
+# Trust-SSL (full model) configuration.
+#
+# Reproduces the Trust-SSL row in Tables 1, 2, 3 and 4 of the paper.
+# All hyperparameters below match Section V of the manuscript.
+
+# Factorization (Equation 2)
+num_factors: 6
+factor_dim: 128
+
+# Evidential head (Equations 3-5)
+num_prototypes: 64
+prior_strength: 0.05
+
+# Trust gate (Equation 8)
+gate_kind: evidential
+gate_alpha: 2.0
+gate_gamma: 3.0
+
+# Base contrastive temperature
+temperature: 0.1
+
+# Additive-residual schedule (Section III.F, Equation 10)
+lambda_sel_max: 0.2
+lambda_sel_start_epoch: 100
+lambda_sel_end_epoch: 150
+lambda_min_start: 0.5
+lambda_min_end: 0.05
+
+# Auxiliary corruption-family classifier
+num_corrupt_classes: 9
+
+# Optimizer (shared across all methods in the sweep)
+epochs: 200
+batch_size: 512
+base_lr: 0.3
+weight_decay: 1.0e-6
+warmup_epochs: 10

@@ -1,0 +1,30 @@
+# Trust-SSL scalar-uncertainty ablation.
+#
+# Ablation that removes factorization: a single evidential head on one
+# projection (T = 1). Keeps the additive-residual loss, the Dempster-
+# Shafer fusion and the corruption auxiliary. Tests whether the
+# factorized structure is necessary.
+
+num_factors: 1
+factor_dim: 128
+num_prototypes: 64
+prior_strength: 0.05
+
+gate_kind: evidential
+gate_alpha: 2.0
+gate_gamma: 3.0
+temperature: 0.1
+
+lambda_sel_max: 0.2
+lambda_sel_start_epoch: 100
+lambda_sel_end_epoch: 150
+lambda_min_start: 0.5
+lambda_min_end: 0.05
+
+num_corrupt_classes: 9
+
+epochs: 200
+batch_size: 512
+base_lr: 0.3
+weight_decay: 1.0e-6
+warmup_epochs: 10

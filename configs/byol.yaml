@@ -1,0 +1,9 @@
+# BYOL baseline configuration.
+
+byol_tau: 0.996          # base EMA coefficient for the target network
+
+epochs: 200
+batch_size: 512
+base_lr: 0.3
+weight_decay: 1.0e-6
+warmup_epochs: 10

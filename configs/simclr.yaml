@@ -1,0 +1,13 @@
+# SimCLR baseline configuration.
+#
+# Reproduces the SimCLR row in Tables 1, 2, 3 and 4 of the paper.
+# 200-epoch pretraining on the 210K aerial corpus.
+
+temperature: 0.1
+
+# Shared schedule (the same values are used for BYOL and VICReg).
+epochs: 200
+batch_size: 512
+base_lr: 0.3
+weight_decay: 1.0e-6
+warmup_epochs: 10

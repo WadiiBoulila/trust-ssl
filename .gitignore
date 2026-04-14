@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Local data and outputs
+datasets/
+checkpoints/
+results/
+logs/
+*.pth
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
