@@ -155,17 +155,10 @@ If you use this code or our reported numbers, please cite:
 @article{boulila2026trustssl,
   title   = {Additive-Residual Selective Invariance for Robust
              Self-Supervised Representation Learning in Aerial Imagery},
-  author  = {Boulila, Wadii},
-  journal = {IEEE Transactions on Geoscience and Remote Sensing},
+  author  = {Wadii Boulila, Adel Ammar, Bilel Benjdira, Maha Driss},
+  journal = {},
   year    = {2026}
 }
 ```
 
-## License
 
-MIT. See `LICENSE`.
-
-## Contact
-
-Questions: open a GitHub issue, or email the corresponding author listed in the paper.
-# trust-ssl
