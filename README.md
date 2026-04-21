@@ -4,7 +4,6 @@
 
 This repository contains the reference implementation for the paper. The code reproduces every experiment reported in the manuscript: pretraining of six self-supervised backbones on an aerial corpus, linear-probe evaluation on three aerial scene classification benchmarks, controlled corruption-robustness evaluation, controlled K–I trajectory analysis, and zero-shot out-of-distribution transfer to BDD100K weather splits.
 
-![overview](docs/overview.png)
 
 ---
 
