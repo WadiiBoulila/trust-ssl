@@ -151,13 +151,13 @@ Full robustness, per-family and per-detector tables are in `results/paper_tables
 If you use this code or our reported numbers, please cite:
 
 ```bibtex
-@article{boulila2026trustssl,
-  title   = {Additive-Residual Selective Invariance for Robust
-             Self-Supervised Representation Learning in Aerial Imagery},
-  author  = {Wadii Boulila, Adel Ammar, Bilel Benjdira, Maha Driss},
-  journal = {},
-  year    = {2026}
+@article{boulila2026trust,
+  title={Trust-SSL: Additive-Residual Selective Invariance for Robust Aerial Self-Supervised Learning},
+  author={Boulila, Wadii and Ammar, Adel and Benjdira, Bilel and Driss, Maha},
+  journal={arXiv preprint arXiv:2604.21349},
+  year={2026}
 }
+
 ```
 
 
